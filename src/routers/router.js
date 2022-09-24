@@ -4,6 +4,6 @@ const apiRoute = '/api';
 const userController = require('../controllers/userController')
 
 //course
-router.get(apiRoute+'/user',userController.getUser)
+router.post(apiRoute+'/user',userController.getUser)
 
 module.exports = router;
