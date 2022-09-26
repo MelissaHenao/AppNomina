@@ -3,7 +3,10 @@ const router = Router();
 const apiRoute = '/api';
 const userController = require('../controllers/userController')
 
-//course
+//login
 router.post(apiRoute+'/user',userController.getUser)
+
+//registro
+router.post(apiRoute+'/registro',userController.create)
 
 module.exports = router;
